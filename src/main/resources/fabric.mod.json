@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "novaclient",
+  "version": "${version}",
+  "name": "Nova Client",
+  "description": "Personalizacja wizualna Minecrafta: GUI, animacje, efekty itemow i ekwipunku.",
+  "authors": ["Nova"],
+  "license": "All-Rights-Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.novaclient.core.NovaClient"]
+  },
+  "mixins": ["novaclient.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
